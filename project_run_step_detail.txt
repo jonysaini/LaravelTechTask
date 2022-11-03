@@ -1,0 +1,32 @@
+Laravel tech task :
+Step1:- Clone this repo(https://github.com/jonysaini/LaravelTechTask.git)
+Step2:-Migrate for DB Table(php artisan migrate) 
+Step3:- Run Project(php artisan serve)
+
+1)	Credit balance api : http://127.0.0.1:8000/api/credit
+            Request method: post .
+            Body : raw .
+                           {
+                              “user_id”:”1”,
+                              “amount”:”5”
+                         }
+           Response:   
+                         {
+    "status": "true",
+    "balance": 20,
+    "msg": "credit amount successfully"
+}
+2)	Buy cookie api : http://127.0.0.1:8000/api/buy_cookie
+            Request method: post .
+            Body : raw 
+                         {
+                             “user_id”:”1”,
+                             “cookie”:”5”
+                         }   
+          Response: 
+                      {
+    "status": "true",
+    "balance": 0,
+    "msg": "You dont have sufficent fund"
+}
+                             
